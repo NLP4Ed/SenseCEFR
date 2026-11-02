@@ -1120,7 +1120,7 @@ class SenseCEFRApp {
   openInspector(token) {
     this.modalWord.textContent = token.isPhrasal ? token.phrasalVerb : token.text;
     if (token.isCustom) {
-      this.modalLemma.innerHTML = `${escapeHTML(token.lemma)} <span style="font-size: 0.72rem; color: #0b5035; font-weight: 700; background: #dcfce7; padding: 1px 7px; border-radius: 4px; margin-left: 6px; border: 1px solid #86efac;">Custom Lexicon</span>`;
+      this.modalLemma.innerHTML = `${escapeHTML(token.lemma)} <span style="font-size: 0.72rem; color: #15803d; font-weight: 600; background: #dcfce7; padding: 1px 7px; border-radius: 4px; margin-left: 6px; border: 1px solid #86efac;">Custom Lexicon</span>`;
     } else {
       this.modalLemma.textContent = token.lemma;
     }
@@ -1373,7 +1373,7 @@ class SenseCEFRApp {
     const csvRows = [];
 
     // metadata and corpus statistics block
-    csvRows.push(['# SenseCEFR Profiler (beta v0.4.2) - Analysis Report']);
+    csvRows.push(['# SenseCEFR Profiler (beta v0.5.0) - Analysis Report']);
     csvRows.push([escapeCSV('Generated At'), escapeCSV(new Date().toISOString())].join(','));
     csvRows.push([escapeCSV('Tokens'), escapeCSV(totalWords)].join(','));
     csvRows.push([escapeCSV('Types'), escapeCSV(uniqueTypes.length)].join(','));

@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SenseCEFR v0.4.2</title>
+  <title>SenseCEFR v0.5.0</title>
+  <!-- google font: ibm plex mono (nlp4ed portal design system) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -26,7 +30,7 @@
       <!-- Bottom Tier: App title and AI toggle -->
       <div class="header-main-row">
         <div class="logo-group">
-          <h1>SenseCEFR <span class="badge-beta">beta v0.4.2</span></h1>
+          <h1>SenseCEFR <span class="badge-beta">beta v0.5.0</span></h1>
           <p>Vocabulary profiler with AI Word Sense Disambiguation</p>
         </div>
         <div class="ai-toggle-group">
@@ -245,7 +249,7 @@
 
       <!-- sentence context box -->
       <div class="section-label">Sentence Context</div>
-      <blockquote id="modalSentence" style="font-style: italic; color: #334155; border-left: 3px solid #0b5035; padding-left: 10px; margin-bottom: 12px; font-size: 0.9rem; background: #f8fafc; padding: 8px 12px; border-radius: 0 6px 6px 0;">
+      <blockquote id="modalSentence" style="font-style: italic; color: #334155; border-left: 3px solid var(--slate-900); padding-left: 10px; margin-bottom: 12px; font-size: 0.9rem; background: #f8fafc; padding: 8px 12px; border-radius: 0 6px 6px 0;">
         Context sentence here...
       </blockquote>
 
@@ -307,7 +311,7 @@
       <!-- ai configuration tab -->
       <div class="settings-tab-pane active" id="paneAiConfig">
         <p class="settings-help-text">
-          Configure your <a href="https://aistudio.google.com/api-keys" target="_blank" rel="noopener noreferrer" style="color: #0b5035; text-decoration: underline; font-weight: 600;">Google Gemini API</a> key to enable high-accuracy contextual Word Sense Disambiguation and pedagogical reasoning. Your key is stored locally in your browser's <code>localStorage</code> and never sent to third-party servers.
+          Configure your <a href="https://aistudio.google.com/api-keys" target="_blank" rel="noopener noreferrer" style="color: var(--slate-900); text-decoration: underline; font-weight: 600;">Google Gemini API</a> key to enable high-accuracy contextual Word Sense Disambiguation and pedagogical reasoning. Your key is stored locally in your browser's <code>localStorage</code> and never sent to third-party servers.
         </p>
 
         <label style="display: block; font-size: 0.8rem; font-weight: 600; margin-bottom: 6px; color: var(--text-main);">Gemini API Key</label>

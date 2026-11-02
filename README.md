@@ -11,8 +11,8 @@
 <p align="center">
   <a href="LICENSE.txt"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
   <a href="https://doi.org/10.5281/zenodo.23318092"><img src="https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23318092-purple.svg" alt="DOI: 10.5281/zenodo.23318092"></a>
-  <a href="https://github.com/NLP4Ed/SenseCEFR"><img src="https://img.shields.io/badge/Release-v0.4.2%20Beta-blue.svg" alt="Version"></a>
-  <a href="https://nlp4ed.com/SenseCEFR/"><img src="https://img.shields.io/badge/Live%20App-SenseCEFR%200.4.2-emerald.svg" alt="Live App SenseCEFR 0.4.2"></a>
+  <a href="https://github.com/NLP4Ed/SenseCEFR"><img src="https://img.shields.io/badge/Release-v0.5.0%20Beta-blue.svg" alt="Version"></a>
+  <a href="https://nlp4ed.com/SenseCEFR/"><img src="https://img.shields.io/badge/Live%20App-SenseCEFR%200.5.0-emerald.svg" alt="Live App SenseCEFR 0.5.0"></a>
   <a href="index.html"><img src="https://img.shields.io/badge/Execution-100%25%20Client--Side-teal.svg" alt="Client-Side"></a>
 </p>
 
@@ -146,7 +146,7 @@ If you use SenseCEFR in academic research, textbook leveling, or curriculum desi
   author       = {Lchgary, Yassine},
   title        = {SenseCEFR: Context-Aware Vocabulary Profiler with Word Sense Disambiguation},
   year         = {2026},
-  version      = {0.4.2},
+  version      = {0.5.0},
   doi          = {10.5281/zenodo.23318092},
   url          = {https://nlp4ed.com/SenseCEFR/}
 }

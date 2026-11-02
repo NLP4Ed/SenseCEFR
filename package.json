@@ -1,6 +1,6 @@
 {
   "name": "sense-cefr-profiler",
-  "version": "0.4.2",
+  "version": "0.5.0",
   "description": "Vocabulary profiler with AI Word Sense Disambiguation",
   "type": "module",
   "scripts": {
