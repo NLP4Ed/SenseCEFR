@@ -3,13 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SenseCEFR - NLP4Ed</title>
+  <title>SenseCEFR - Context-Aware CEFR Vocabulary Profiler | NLP4Ed</title>
+  <meta name="description" content="Free client-side CEFR vocabulary profiler (A1 to C2) with local and AI Word Sense Disambiguation. Solves the polysemy flatline problem for EFL teachers, textbook evaluation, and applied linguistics research.">
+  <meta name="keywords" content="CEFR vocabulary profiler, CEFR text analyzer, word sense disambiguation, polysemy flatline, A1 C2 vocabulary level checker, EFL material evaluation, corpus linguistics, NLP4Ed, SenseCEFR">
+  <meta name="author" content="Yassine Lchgary">
+  <link rel="canonical" href="https://nlp4ed.com/SenseCEFR/">
+
+  <!-- og tags -->
+  <meta property="og:title" content="SenseCEFR - Context-Aware CEFR Vocabulary Profiler">
+  <meta property="og:description" content="Disambiguate English word senses from A1 to C2 in context. 100% client-side CEFR vocabulary profiler built for EFL educators and researchers.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nlp4ed.com/SenseCEFR/">
+  <meta property="og:site_name" content="NLP4Ed">
+  <meta property="og:image" content="https://nlp4ed.com/SenseCEFR/img/sensecefr-og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="SenseCEFR - Context-Aware CEFR Vocabulary Profiler by NLP4Ed">
+
+  <!-- twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@NLP4Ed">
+  <meta name="twitter:title" content="SenseCEFR - Context-Aware CEFR Vocabulary Profiler">
+  <meta name="twitter:description" content="Disambiguate English word senses from A1 to C2 in context. Free client-side CEFR profiler by NLP4Ed.">
+  <meta name="twitter:image" content="https://nlp4ed.com/SenseCEFR/img/sensecefr-og-image.png">
+
   <!-- google font: ibm plex mono (nlp4ed portal design system) -->
   <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <!-- structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "SenseCEFR",
+    "alternateName": "SenseCEFR Vocabulary Profiler",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Web Browser",
+    "softwareVersion": "0.6.0",
+    "url": "https://nlp4ed.com/SenseCEFR/",
+    "image": "https://nlp4ed.com/SenseCEFR/img/sensecefr-og-image.png",
+    "description": "A context-aware CEFR vocabulary profiler (A1 to C2) that solves the polysemy flatline problem using local and AI-driven Word Sense Disambiguation.",
+    "keywords": "CEFR vocabulary profiler, word sense disambiguation, polysemy, A1-C2 text analyzer, EFL, ESL, corpus linguistics",
+    "isAccessibleForFree": true,
+    "license": "https://opensource.org/licenses/MIT",
+    "codeRepository": "https://github.com/NLP4Ed/SenseCEFR",
+    "sameAs": [
+      "https://github.com/NLP4Ed/SenseCEFR",
+      "https://doi.org/10.5281/zenodo.23318092"
+    ],
+    "featureList": [
+      "Context-aware CEFR vocabulary profiling (A1 to C2)",
+      "Local and Gemini AI Word Sense Disambiguation",
+      "Polysemy discrepancy detection",
+      "Click-to-inspect guidewords and manual sense override",
+      "100% client-side execution"
+    ],
+    "author": {
+      "@type": "Person",
+      "@id": "https://nlp4ed.com/#yassine-lchgary",
+      "name": "Yassine Lchgary",
+      "url": "https://yassinelchgary.com"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://nlp4ed.com/#organization",
+      "name": "NLP4Ed",
+      "url": "https://nlp4ed.com/"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
 </head>
 <body>
   <div class="app-container">
@@ -19,10 +90,10 @@
       <div class="header-top-bar">
         <div class="brand-pair">
           <a href="https://nlp4ed.com" target="_blank" rel="noopener noreferrer" title="Visit NLP4Ed.com">
-            <img src="img/nlp4ed.svg" alt="NLP4Ed.com" class="header-logo">
+            <img src="img/nlp4ed.svg" alt="NLP4Ed Logo" class="header-logo" width="65" height="48">
           </a>
           <span class="brand-divider" aria-hidden="true"></span>
-          <span class="brand-author">Built by <a href="https://www.linkedin.com/in/yassine-lchgary/" target="_blank" rel="noopener noreferrer" class="brand-author-link"><span>Yassine Lchgary</span><img src="img/yassine.jpg" alt="Yassine Lchgary" class="author-avatar" width="28" height="28"></a></span>
+          <span class="brand-author">Built by <a href="https://www.linkedin.com/in/yassine-lchgary/" target="_blank" rel="noopener noreferrer" class="brand-author-link"><span>Yassine Lchgary</span><img src="img/yassine-lchgary.jpg" alt="Yassine Lchgary" class="author-avatar" width="28" height="28"></a></span>
         </div>
         <div class="header-top-actions">
           <a href="https://github.com/NLP4Ed/SenseCEFR" target="_blank" rel="noopener noreferrer" class="header-github-link" aria-label="GitHub repository" title="View source on GitHub">
